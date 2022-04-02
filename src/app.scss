@@ -1,0 +1,136 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: rgb(34, 33, 33);
+  min-height: 100vh;
+  font-size: 3vmin;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  font-size: 3vmin;
+}
+.menu {
+  position: relative;
+  z-index: 100;
+  min-width: 100%;
+  min-height: 6vmin;
+  background-color: rgb(12, 11, 11);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: normal;
+  padding: 0 5vmin 0 5vmin;
+}
+.logo {
+  color: aqua;
+  font-weight: 800;
+  font-size: 6vmin;
+  letter-spacing: 1vmin;
+}
+.menu-items {
+  width: 50vmin;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.select {
+  color: white;
+  height: 4vmin;
+  width: 13vmin;
+  border: none;
+  outline: none;
+  font-size: 3vmin;
+  background-color: rgba(44, 31, 31, 0);
+  padding-bottom: 0.5vmin;
+  .opt {
+    width: 10vmin;
+    height: 4vmin;
+    font-size: 3vmin;
+    color: white;
+  }
+  .opt1 {
+    background-color: #092f09;
+  }
+  .opt2 {
+    background-color: #0e052d;
+  }
+  .opt3 {
+    background-color: #060c2d;
+  }
+  .opt4 {
+    background-color: #301907;
+  }
+}
+.about-container {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(44, 31, 31, 0.6);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .about {
+    width: 100vmin;
+    height: 80vmin;
+    background-color: rgb(12, 11, 11);
+    border-radius: 1vmin;
+    font-size: 3vmin;
+    overflow-y: auto;
+    padding: 3vmin;
+    opacity: 1;
+    animation: show 400ms ease;
+    transition-delay: 200ms;
+    transition-duration: 200ms;
+  }
+  .about1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 4vmin;
+    font-weight: bold;
+    background-color: rgb(12, 11, 11);
+  }
+}
+.language {
+  color: white;
+  height: 4vmin;
+  width: 17vmin;
+  border: none;
+  outline: none;
+  font-size: 3vmin;
+  background-color: rgba(44, 31, 31, 0);
+  padding-bottom: 0.5vmin;
+  .lan {
+    background-color: rgb(12, 11, 11);
+    width: 10vmin;
+    height: 4vmin;
+    font-size: 3vmin;
+    color: white;
+  }
+}
+@media (min-width: 50px) and (max-width: 950px) {
+  .about-container {
+    height: 160vh;
+  }
+}
